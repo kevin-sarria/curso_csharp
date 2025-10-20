@@ -32,22 +32,22 @@ namespace TaskMaster
             queries.ListTasks();
             break;
           case "2":
-            // AddTask();
+            AddTask();
             break;
           case "3":
-            // MarkAsCompleted();
+            MarkAsCompleted();
             break;
           case "4":
-            // EditTask();
+            EditTask();
             break;
           case "5":
-            // RemoveTask();
+            RemoveTask();
             break;
           case "6":
-            //TasksByState();
+            queries.TasksByState();
             break;
           case "7":
-            //TasksByDescription();
+            queries.TasksByDescription();
             break;
           case "8":
             salir = true;
@@ -61,5 +61,60 @@ namespace TaskMaster
       }
     }
 
+    public static void AddTask()
+    {
+      try
+      {
+        var task = queries.AddTask();
+        fileActions.WriteFile(task);
+      }
+      catch (Exception ex)
+      {
+        WriteLine($"Ocurrio un error al agregar la tarea: {ex.Message}");
+      }
+    }
+
+    public static void MarkAsCompleted()
+    {
+      try
+      {
+        var task = queries.MarkAsCompleted();
+        fileActions.WriteFile(task);
+      }
+      catch (Exception ex)
+      {
+        WriteLine($"Ocurrio un error al marcar la tarea como completada: {ex.Message}");
+      }
+    }
+
+    public static void EditTask()
+    {
+      try
+      {
+        var task = queries.EditTask();
+        fileActions.WriteFile(task);
+      }
+      catch (Exception ex)
+      {
+
+        WriteLine($"Ocurrio un error al editar la tarea: {ex.Message}");
+      }
+    }
+
+    public static void RemoveTask()
+    {
+      try
+      {
+        var task = queries.RemoveTask();
+        fileActions.WriteFile(task);
+      }
+      catch (Exception ex)
+      {
+        WriteLine($"Ocurrio un error al eliminar la tarea: {ex.Message}");
+      }
+    }
+
+
   }
+  
 }

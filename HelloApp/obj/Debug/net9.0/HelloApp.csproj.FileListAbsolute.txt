@@ -13,3 +13,6 @@ C:\Users\Estaduardo\Documents\proyectos\curso_csharp\HelloApp\obj\Debug\net9.0\H
 C:\Users\Estaduardo\Documents\proyectos\curso_csharp\HelloApp\obj\Debug\net9.0\HelloApp.genruntimeconfig.cache
 C:\Users\Estaduardo\Documents\proyectos\curso_csharp\HelloApp\obj\Debug\net9.0\ref\HelloApp.dll
 C:\Users\Estaduardo\Documents\proyectos\curso_csharp\HelloApp\obj\Debug\net9.0\HelloApp.sourcelink.json
+C:\Users\Estaduardo\Documents\proyectos\curso_csharp\HelloApp\bin\Debug\net9.0\BetterConsoleTables.dll
+C:\Users\Estaduardo\Documents\proyectos\curso_csharp\HelloApp\obj\Debug\net9.0\HelloApp.csproj.AssemblyReference.cache
+C:\Users\Estaduardo\Documents\proyectos\curso_csharp\HelloApp\obj\Debug\net9.0\HelloApp.csproj.Up2Date
